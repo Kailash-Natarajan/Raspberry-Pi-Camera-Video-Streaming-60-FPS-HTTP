@@ -29,7 +29,7 @@
 > ## Stopping Motion Service
 >> #### Press `Ctrl+C`
 
-> ## Start the Motion service and type the URL of the format 'http://<rpi_ip>:8081` to access the video feed, where <rpi_ip> is the local network IP address of the Raspberry Pi. You should be getting 720p 60FPS video at greyscale
+> ## Start the Motion service and type the URL of the format `http://<rpi_ip>:8081` to access the video feed, where <rpi_ip> is the local network IP address of the Raspberry Pi. You should be getting 720p 60FPS video at greyscale
 > ## You can change the stream_grey parameter from 'on' to 'off' without the quotes in the file motion.conf (after performing Step 2 fully) for colour format.
 
 > Email Me: kailash.natarajan.kn@gmail.com
