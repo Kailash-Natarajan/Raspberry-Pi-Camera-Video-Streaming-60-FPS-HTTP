@@ -21,7 +21,7 @@
 >> #### `$ sudo make`
 >> #### `$ sudo make install`
 >> #### `$ cd /usr/local/etc/motion`
->> #### `$ sudo wget -L https://raw.githubusercontent.com/Kailash-Natarajan/Pi-Camera-HTTP-Video-Streaming/main/motion_720p60.conf`
+>> #### `$ sudo wget -L https://raw.githubusercontent.com/Kailash-Natarajan/Raspberry-Pi-Camera-Video-Streaming-60-FPS-HTTP/main/motion_720p60.conf`
 >> #### `$ sudo mv motion_720p60.conf motion.conf`
 
 > ## Starting Motion Service
