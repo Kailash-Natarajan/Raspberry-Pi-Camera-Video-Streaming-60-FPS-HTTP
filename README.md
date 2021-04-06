@@ -7,7 +7,7 @@
 
 > ## Pre-Requisites:
 > * Raspberry Pi should already be setup completely (including SSH if required) and must be connected to a network.
-> * Remove Motion if it is already installed using apt-get.
+> * Remove existing installation of Motion (if any).
 
 > ## Setup (on the Raspberry Pi). Run the following commands on the terminal of Raspberry Pi 
 > ### Step 1: Navigate to any personal folder (optional). 
@@ -27,9 +27,10 @@
 > ## Starting Motion Service
 >> #### `$ motion`
 > ## Stopping Motion Service
->> #### Press `Ctrl+C`
+>> #### Press `Ctrl+C` in the same terminal where Motion was started.
 
-> ## Start the Motion service and type the URL of the format `http://<rpi_ip>:8081` to access the video feed, where <rpi_ip> is the local network IP address of the Raspberry Pi. You should be getting 720p 60FPS video at greyscale
+> ## Start the Motion service and type the URL of the format `http://<rpi_ip>:8081` in your web browser to access the video feed, where <rpi_ip> is the local network IP address of the Raspberry Pi. You should be getting 720p 60FPS video at greyscale.
+> ## This video feed can also be accessed by OpenCV using the same URL, thus allowing for use of image processing techniques too.
 > ## You can change the stream_grey parameter from 'on' to 'off' without the quotes in the file motion.conf (after performing Step 2 fully) for colour format.
 
-> Email Me: kailash.natarajan.kn@gmail.com
+> Email: kailash.natarajan.kn@gmail.com
