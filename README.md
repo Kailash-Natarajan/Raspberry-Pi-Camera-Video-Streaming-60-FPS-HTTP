@@ -33,5 +33,3 @@
 > ## This video feed can also be accessed by OpenCV using the same URL, thus allowing for use of image processing techniques too.
 > ## You can change the stream_grey parameter from 'on' to 'off' without the quotes in the file motion.conf (after performing Step 2 fully) for colour format.
 > ## **Note: This may not work if you just replace the motion.conf file for your existing installation of Motion** 
-
-> Email: kailash.natarajan.kn@gmail.com
