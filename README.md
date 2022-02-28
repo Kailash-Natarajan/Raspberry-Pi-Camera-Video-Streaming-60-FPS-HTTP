@@ -32,6 +32,5 @@
 
 > ## Start the Motion service and type the URL of the format `http://<rpi_ip>:8081` in your web browser to access the video feed, where <rpi_ip> is the local network IP address of the Raspberry Pi. You should be getting 720p 60FPS video at greyscale.
 > ## This video feed can also be accessed by OpenCV using the same URL, thus allowing for use of image processing techniques too.
-> ## You can change the stream_grey parameter from 'on' to 'off' without the quotes in the file motion.conf (after performing Step 2 fully) for colour format.
 > ## **Note: This may not work if you just replace the motion.conf file for your existing installation of Motion** 
 > [Official Installation Instructions](https://motion-project.github.io/motion_build.html#Abbreviated_Building)
