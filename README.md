@@ -3,7 +3,7 @@
 > * This method allows Raspberry Pi to broadcast the Raspberry Pi 5MP Camera Module's video feed on a HTTP URL within the same network and does not need additional softwares like VLC Player to access the video feed. The HTTP URL can be accessed from a Web Browser.
 > * To get video stream on HTTP, the simplest method is to configure Motion serivce on the Raspberry Pi. But this Motion service runs a motion detection feature on the video stream by default and gets defaulted to 1 FPS when no motion is detected (which is a useful for applications like CCTV cameras). The procedure described below is for getting maximum performance at minimum lag from the camera over the network, so we will disable the motion detection feature.
 > * #### By default the video is broadcast in colour format. But to reduce bandwidth requirement, we use greyscale mode, although 720p 60FPS is possible on colour mode also. 
-> * #### **Note: This was tested on Raspberry Pi 4 and Raspberry Pi 5MP Camera Module. Other combinations have not been tested.**
+> * #### **Note: This was tested on Raspberry Pi 4 and Raspberry Pi 5MP Camera Module with Raspberry Pi OS. Other combinations have not been tested.**
 
 > ## Pre-Requisites:
 > * Raspberry Pi should already be setup completely (including SSH if required) and must be connected to a network.
@@ -12,6 +12,7 @@
 > ## Setup (on the Raspberry Pi). Run the following commands on the terminal of Raspberry Pi 
 > ### Step 1: Navigate to any personal folder (optional). 
 > ### Step 2: Run the following commands one by one: 
+>> #### `$ sudo apt-get install autoconf automake autopoint build-essential pkgconf libtool libzip-dev libjpeg-dev git libavformat-dev libavcodec-dev libavutil-dev libswscale-dev libavdevice-dev libwebp-dev gettext libmicrohttpd-dev` 
 >> #### `$ sudo mkdir motion`
 >> #### `$ cd motion`
 >> #### `$ git clone https://github.com/Motion-Project/motion.git`
@@ -33,3 +34,4 @@
 > ## This video feed can also be accessed by OpenCV using the same URL, thus allowing for use of image processing techniques too.
 > ## You can change the stream_grey parameter from 'on' to 'off' without the quotes in the file motion.conf (after performing Step 2 fully) for colour format.
 > ## **Note: This may not work if you just replace the motion.conf file for your existing installation of Motion** 
+> [Official Installation Instructions](https://motion-project.github.io/motion_build.html#Abbreviated_Building)
